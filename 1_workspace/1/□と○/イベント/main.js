@@ -7,7 +7,7 @@ circleButton.onmousemove = function() {
   figure.classList.add("rounded")
 }
 
-squareButton.onmousemove= function() {
+squareButton.onmousemove = function() {
   // figure から rounded クラスを削除する
   figure.classList.remove("rounded")
 }

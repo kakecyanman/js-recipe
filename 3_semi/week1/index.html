@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 文字列と数字
+      console.log("2") // 文字
+      console.log(2) // 数字
+
+      console.log("2" + "2") // 22
+      console.log(2 + 2) // 4
+
+      // 関数
+      const hello = function(name) {
+        console.log("私は" + name + "です。")
+      }
+      hello("かける")
+
+      const plus = function(value) {
+        const result = value + 2
+        return result // 返り値
+      }
+      console.log(plus(3)) // 5
+
+      // 配列
+      const array = ["かける", "ひろき", "せいや", "せな"]
+      console.log(array)
+      console.log(array[1]) // ひろき
+
+      // オブジェクト
+      const kakeru = {
+        name: "かける",
+        age: 21,
+        hobby: ["サッカー", "ゲーム"],
+
+        sayHello: function() {
+          console.log(`こんにちは、${kakeru.name}です！`)
+        },
+      }
+      kakeru.sayHello()
+
+      /*
+       DocumentObjectModel(DOM)
+       DOMTree
+       HTML/CSS/JS -> DOM -> ブラウザ表示
+       */
+    </script>
+  </body>
+</html>
